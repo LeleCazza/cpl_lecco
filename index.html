@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPL LECCO</title>
+    <link rel="icon" href="immagini/loghi/logo_bachelet.png" type="image/x-icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="margin-top: 20px;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://istitutobachelet.edu.it/">
+            <img src="immagini/loghi/logo_bachelet.png" class="d-inline-block align-text-top" style="min-width: 100px;max-width: 10%; float: left; padding-right: 20px;">
+            <h1 style="font-size:4vw;  line-height: 100px; height: 100px;"> Centro Promozione Legalità Lecco </h1>
+        </a>
+    </div>
+    <div class="container-fluid" style="clear: left">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="iniziative.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              INIZIATIVE
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="iniziative.html#paroleemusica">LEGALIT&Agrave IN PAROLE E MUSICA</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="iniziative.html#peppino">GLI AMICI DI PEPPINO IMPASTATO</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="iniziative.html#lacattura">LEGGERE IL PRESENTE REIMMAGINARE IL FUTURO: LA CATTURA</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="iniziative.html#programma">PROGRAMMA MAGGIO 2024</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="iniziative.html#borsellino">CONTRO LA CORRUZIONE A FAVORE DELLA TRASPARENZA</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="iniziative.html#silvionovembre">LEGGERE IL PRESENTE REIMMAGINARE IL FUTURO: SILVIO NOVEMBRE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="chisiamo.html">CHI SIAMO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dovesiamo.html">DOVE SIAMO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contatti.html">CONTATTI</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Cerca" id="search-query">
+                        <button class="btn btn-primary" type="button" id="search">Cerca</button>
+                        <script>
+                            document.getElementById('search').addEventListener('click', function() {
+                            const query = document.getElementById('search-query').value;
+                            if (query) {
+                                const googleSearchUrl = 'https://www.google.com/search?q=centro+promozione+legalità+lecco+' + encodeURIComponent(query);
+                                window.open(googleSearchUrl, '_blank');
+                            }
+                        });
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container-fluid" style="text-align: justify">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="immagini/locandine/24_05_23_paroleemusica.png" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="immagini/locandine/24_05_20_peppino.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="immagini/locandine/24_05_13_lacattura.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="immagini/locandine/24_05_03_programma.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="immagini/locandine/24_03_21_borsellino.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="immagini/locandine/24_03_16_silvionovembre.jpg" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
